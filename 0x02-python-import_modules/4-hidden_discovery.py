@@ -4,5 +4,4 @@ if __name__ == "__main__":
     names = dir()
     for i in range(len(names)):
         if names[i][:2] != "__":
-            print(name[i])
-    
+            print(names[i])
