@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Module 3-to_json_string.
-function that returns the JSON 
+function that returns the JSON
 representation of an object (string)
 """
 import json
