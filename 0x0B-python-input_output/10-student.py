@@ -5,15 +5,16 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self, attr=None):
+    def to_json(self, attrs=None):
         dicti = self.__dict__.copy()
         attr_ret = {}
-        if type(attr) is list:
-            if all(isinstance(i, str) for i in attr):
-                for i in attr:
-                    for j in dicti:
-                        if i == j:
-                            attr_ret[i] = dicti[i]
+        if type(attrs) is list:
+            if not all(isinstance(i, str) for i in attrs):
+                return dicti
+                
+            else:
+                for i in dicti:
+                    if i in attrs:
+                        attr_ret[i] = i
                 return attr_ret
-        else:
-            return dicti
+        return dicti
