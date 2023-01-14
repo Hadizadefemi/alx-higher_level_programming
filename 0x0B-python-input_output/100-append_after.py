@@ -18,7 +18,7 @@ def append_after(filename="", search_string="", new_string=""):
 
     with open(filename, mode="w", encoding="utf-8") as f:
         if len(data) > 1:
-            for i in range(len(data)):
+            for i in range(len(data) + 1):
                 if search_string in data[i]:
                     data.insert(i + 1, new_string)
 
