@@ -16,7 +16,7 @@ def pascal_triangle(n):
     if n <= 0:
         return matrix
 
-   for i in range(n):
+    for i in range(n):
         inner = [str(11**i)]
         res = []
         for i in inner:
