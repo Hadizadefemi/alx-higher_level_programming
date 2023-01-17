@@ -1,4 +1,4 @@
-#!/usr/bin.python3
+#!/usr/bin/python3
 """ Module 2-matrix_divided
 function that divides all elements of a matrix
 """
