@@ -27,6 +27,8 @@ def matrix_divided(matrix, div):
         if len(matrix) == 0:
             raise TypeError(m)
         for rows in matrix:
+            if len(rows) == 0:
+                raise TypeError(m)
             if type(rows) != list:
                 raise TypeError(m)
             for j in rows:
