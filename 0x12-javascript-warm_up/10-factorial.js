@@ -4,8 +4,8 @@ function factorial (num) {
   if (isNaN(num) || num < 2) {
     return 1;
   } else {
-      return num * factorial(num - 1);
-    }
+    return num * factorial(num - 1);
+  }
 }
 
 const argv = process.argv[2];
