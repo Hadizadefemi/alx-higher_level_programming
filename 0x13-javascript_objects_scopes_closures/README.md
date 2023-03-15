@@ -1,4 +1,4 @@
-## 0x13-javascript_objects_scopes_closures
+# 0x13-javascript_objects_scopes_closures
 This folder contains tasks assigned to students at ALX Schools which aims at teaching Objects, Scopes, and Closures in
 JavaScript
 
